@@ -1,14 +1,17 @@
 import './App.css';
 import  Stars  from './components/Stars';
 
+
 function App() {
+ 
   return (
     <div className='rating-list'>
-      <Stars value = '1' />
-      <Stars value = '2' />
-      <Stars value = '3' />
-      <Stars value = '4' />
-      <Stars value = '5' />
+     
+      <Stars count = {1} />
+      <Stars count = {2} />
+      <Stars count = {3} />
+      <Stars count = {4} />
+      <Stars count = {5} />
     </div>
   );
 }

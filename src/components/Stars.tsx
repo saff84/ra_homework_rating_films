@@ -2,9 +2,13 @@
 import Star from "./Star";
 import { nanoid } from 'nanoid'//библиотека, которая  генерирует уникальный id
 
+interface StarsProps {
+    count: number,
+}
 
-const Stars = (props: any) => {
-    const count = Number(props.value);
+
+const Stars = ({count}: StarsProps ) => {
+    // const count = props;
     if (!Number.isInteger(count) || typeof count !== 'number' || isNaN(count) || count < 1 || count > 5) {
         return null;
     };
